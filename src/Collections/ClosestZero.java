@@ -41,18 +41,18 @@ public class ClosestZero {
 
         int res = numeros.get(0);
 
-        for(int i=0; i<numeros.size(); i++){
+        for (Integer numero : numeros) {
 
-            int temp = 0;
+            int temp;
 
-            if(numeros.get(i) < 0){
-                temp = numeros.get(i) * (-1);
-            }else{
-                temp = numeros.get(i);
+            if (numero < 0) {
+                temp = numero * (-1);
+            } else {
+                temp = numero;
             }
 
-            if(temp<=res){
-                res = numeros.get(i);
+            if (temp <= res) {
+                res = numero;
             }
         }
 
