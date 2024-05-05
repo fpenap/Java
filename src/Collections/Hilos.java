@@ -25,8 +25,7 @@ public class Hilos {
         CercanoZeroHilo cercano = new CercanoZeroHilo((ArrayList<Integer>) numeros);
         LejanoCeroHilo lejano = new LejanoCeroHilo((ArrayList<Integer>) numeros);
 
-        cercano.start();
         lejano.start();
-
+        cercano.start();
     }
 }
